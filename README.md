@@ -11,14 +11,15 @@ Vagrant box for developpers based on Ubuntu 14.04 Trusty
 
 ## Usage
 Create a "workspace" directory on your disk root (/workspace or c:\workspace)
+This folder will be is shared in :
+``/var/workspace/``
 
-```
-vagrant up
-```
+Start the box with :
+``vagrant up``
 
 ssh : Port 2222, User vagrant, Password vagrant
 
-#### Installed software
+## Installed software
 
 * MongoDB
 * Node.js 0.10.26 with npm
@@ -33,14 +34,9 @@ ssh : Port 2222, User vagrant, Password vagrant
 * express
 * sails
 
-#### Ports
+## Shared folders
 
-The only configured port is 3000 for your nodejs app.
-
-#### Shared folders
-
-Your projects is shared in:
-``/var/workspace/``
+Your projects 
 
 # Licences
 
