@@ -1,0 +1,10 @@
+server {
+        include /etc/nginx/common;
+        server_name  sample-php.devbox;
+        root /var/workspace/sample-php/app/webroot/;
+        access_log  /var/log/nginx/sample-php.access.log;
+        if (!-f $request_filename) {
+             rewrite ^/(.+)$ /index.php?url=$1 last;
+             break;
+        }
+}

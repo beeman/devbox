@@ -31,3 +31,12 @@ pecl install pecl_http
 pecl install mongo
 echo "extension=mongo.so" >> /etc/php5/fpm/php.ini
 echo "extension=http.so" >> /etc/php5/fpm/php.ini
+
+echo "Copie de fichiers de configuration"
+
+cp -fr /vagrant/extra_files/nginx/* /etc/nginx/
+
+echo "Rechargement des services php5-fpm et nginx"
+
+service php5-fpm reload
+service nginx reload

@@ -1,0 +1,13 @@
+listen   80;
+
+index  index.html index.htm index.php;
+
+location ~ ^(.+\.php)(/.*)?$ {
+        fastcgi_pass unix:/var/run/php5-fpm.sock;
+        include /etc/nginx/fastcgi_params;
+}
+
+location = /favicon.ico {
+        access_log      off;
+        log_not_found   off;
+}
