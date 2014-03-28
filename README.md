@@ -2,7 +2,7 @@
 
 ## Informations
 
-Vagrant box for developpers based on Ubuntu 14.04 Trusty
+Vagrant box for PHP and nodejs developpers based on Ubuntu 14.04 Trusty
 
 ## Requirements
 
@@ -11,7 +11,7 @@ Vagrant box for developpers based on Ubuntu 14.04 Trusty
 
 ## Usage
 Create a "workspace" directory on your disk root (/workspace or c:\workspace)
-This folder will be is shared in :
+This folder will be shared in the box at :
 ``/var/workspace/``
 
 Start the box with :
@@ -31,14 +31,8 @@ ssh : Port 2222, User vagrant, Password vagrant
 * bower
 * gulp
 * yeoman
-* express
-* sails
 
-## Shared folders
-
-Your projects 
-
-# Licences
+## Licences
 
 MIT
 devbox
