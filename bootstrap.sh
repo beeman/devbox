@@ -17,9 +17,10 @@ echo "Installation de packages node"
 npm install -g grunt-cli
 npm install -g bower
 npm install -g gulp
-npm install -g yeoman
-npm install -g express
-npm install -g sails
+npm install -g yo
+#npm install -g express
+#npm install -g sails
+#npm install ... whatever you want
 
 echo "Installation de composer"
 curl -sS https://getcomposer.org/installer | php
