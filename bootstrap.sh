@@ -3,8 +3,8 @@ nodeVersion=v0.11.12
 echo "Mise à jour des dépôts"
 apt-get update -y -q
 
-echo "Installation des packages git/mongodb/php5/nginx"
-apt-get install git build-essential mongodb htop vim nginx php5 php-pear php5-dev php5-fpm php5-curl php5-gd libcurl4-openssl-dev -y -q
+echo "Installation des packages git/mongodb/php5/nginx/ruby"
+apt-get install git build-essential mongodb htop vim nginx php5 php-pear php5-dev php5-fpm php5-curl php5-gd libcurl4-openssl-dev gem -y -q
 
 echo "Installation de nodejs $nodeVersion"
 wget --quiet http://nodejs.org/dist/$nodeVersion/node-$nodeVersion-linux-x64.tar.gz
@@ -32,11 +32,12 @@ pecl install mongo
 echo "extension=mongo.so" >> /etc/php5/fpm/php.ini
 echo "extension=http.so" >> /etc/php5/fpm/php.ini
 
-echo "Copie de fichiers de configuration"
+echo "installation de compass"
+gem install compass
 
+echo "Copie de fichiers de configuration"
 cp -fr /vagrant/extra_files/nginx/* /etc/nginx/
 
 echo "Rechargement des services php5-fpm et nginx"
-
 service php5-fpm reload
 service nginx reload
