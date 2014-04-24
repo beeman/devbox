@@ -32,6 +32,9 @@ pecl install mongo
 echo "extension=mongo.so" >> /etc/php5/fpm/php.ini
 echo "extension=http.so" >> /etc/php5/fpm/php.ini
 
+ln -s /etc/php5/mods-available/mcrypt.ini /etc/php5/cli/conf.d/20-mcrypt.ini
+ln -s /etc/php5/mods-available/mcrypt.ini /etc/php5/fpm/conf.d/20-mcrypt.ini
+
 echo "installation de compass"
 gem install compass
 
