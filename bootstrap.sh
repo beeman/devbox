@@ -4,7 +4,7 @@ echo "Mise à jour des dépôts"
 apt-get update -y -q
 
 echo "Installation des packages git/mongodb/php5/nginx/ruby"
-apt-get install git build-essential mongodb htop vim nginx php5 php-pear php5-dev php5-fpm php5-curl php5-gd libcurl4-openssl-dev gem -y -q
+apt-get install git build-essential mongodb htop vim nginx php5 php-pear php5-dev php5-fpm php5-curl php5-gd php5-mcrypt libcurl4-openssl-dev gem -y -q
 
 echo "Installation de nodejs $nodeVersion"
 wget --quiet http://nodejs.org/dist/$nodeVersion/node-$nodeVersion-linux-x64.tar.gz
