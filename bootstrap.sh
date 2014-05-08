@@ -14,6 +14,7 @@ ln -s /opt/node/bin/node /usr/bin/node
 ln -s /opt/node/bin/npm /usr/bin/npm
 
 echo "Installing global node packages with npm"
+npm install -g nodemon
 npm install -g grunt-cli
 npm install -g bower
 npm install -g gulp
