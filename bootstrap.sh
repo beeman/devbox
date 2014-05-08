@@ -1,4 +1,4 @@
-nodeVersion=v0.11.12
+nodeVersion=v0.10.28
 
 echo "Mise à jour des dépôts"
 apt-get update -y -q
