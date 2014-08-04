@@ -22,7 +22,7 @@ ssh : Port 2222, User vagrant, Password vagrant
 ## Installed software
 
 * MongoDB
-* Node.js 0.11.12 with npm
+* Node.js 0.10.30 with npm
 * php5 with fpm
 * nginx
 * git
