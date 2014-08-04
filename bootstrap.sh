@@ -1,4 +1,4 @@
-nodeVersion=v0.10.28
+nodeVersion=v0.10.30
 
 echo "Updating package index"
 apt-get update -y -q
