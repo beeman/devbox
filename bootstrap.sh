@@ -19,6 +19,7 @@ npm install -g grunt-cli
 npm install -g bower
 npm install -g gulp
 npm install -g yo
+#npm install -g strongloop
 #npm install -g express
 #npm install -g sails
 #npm install ... whatever you want
